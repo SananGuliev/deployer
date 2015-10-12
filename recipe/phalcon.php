@@ -17,7 +17,7 @@ task('migration', function () {
     run("cd {{release_path}} && phalcon migration run");
 })->desc('Phalcon migration');
 /**
- * Phalcon cache directory make writable.
+ * Phalcon writable directories
  */
 task('cache', function () {
     run("cd {{release_path}} && chmod -R a+w app/cache");
